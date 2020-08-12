@@ -1,0 +1,1 @@
+from django.urls import pathfrom .views import *urlpatterns = [    path('', HomePage.as_view(), name='homepage'),    path('article/detail/<title>', DetailView.as_view(), name='detail')]
