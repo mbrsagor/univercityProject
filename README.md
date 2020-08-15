@@ -22,3 +22,8 @@ pip install -r requirements.txt
 ./manage.py createsuperuser
 ./manage.py runserver
 ```
+
+##### Special Qualification for the project:
+- Facebook sharing show thumbnail, title and shot description. Below the look like the screenshot.
+
+![demo](https://res.cloudinary.com/mbrsagor/image/upload/v1597468586/Screenshot_2020-08-15_at_11.12.02_AM_qejagz.png)
