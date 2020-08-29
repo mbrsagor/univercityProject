@@ -1,1 +1,1 @@
-from django.views.generic import ListViewfrom blog.models.book import Publisherclass PublisherList(ListView):    model = Publisher
+from django.views.generic import ListView, DetailViewfrom blog.models.book import Publisher, Bookclass PublisherList(ListView):    model = Publisherclass PublisherDetail(DetailView):    model = Publisher    def get_context_data(self, **kwargs):        context = super().get_context_data(**kwargs)        context['book_list'] = Book.objects.all()        return context
