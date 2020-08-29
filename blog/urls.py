@@ -1,1 +1,1 @@
-from django.urls import pathfrom blog.views.article_views import *urlpatterns = [    path('', HomePage.as_view(), name='homepage'),    path('article/detail/<title>', DetailView.as_view(), name='detail')]
+from django.urls import pathfrom blog.views.article_views import *from blog.views.book_views import PublisherListurlpatterns = [    path('', HomePage.as_view(), name='homepage'),    path('article/detail/<title>', DetailView.as_view(), name='detail'),    path('publishers/', PublisherList.as_view()),]

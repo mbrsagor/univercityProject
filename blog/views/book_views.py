@@ -1,0 +1,1 @@
+from django.views.generic import ListViewfrom blog.models.book import Publisherclass PublisherList(ListView):    model = Publisher
