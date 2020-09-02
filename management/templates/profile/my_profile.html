@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block title %} {{ user.username }} {% endblock %}{% block content %}{% if user.username %} <p>Username : {{ user.username }}</p> {% endif %}{% if user.email %} <p>Email : {{ user.email }}</p> {% endif %}{% if user.first_name and user.last_name %} <p>Full Name : {{ user.first_name }}  {{ user.last_name }}</p> {% endif %}{% endblock %}
