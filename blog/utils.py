@@ -1,0 +1,1 @@
+from enum import Enumclass ArticleStatus(Enum):    PENDING = 0    REVIEW = 1    PUBLISH = 2    @classmethod    def get_choices(cls):        return [(_attr, _attr.value) for _attr in ArticleStatus]
